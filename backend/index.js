@@ -21,7 +21,7 @@ app.use(
     cors({
         origin: 'http://localhost:3000',
         method: 'GET, POST, PUT, DELETE',
-        Credential: true,
+        credentials: true,
     })
 )
 app.use('/auth', authRoute)
